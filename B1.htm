@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 96px 96px 96px 96px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Font Style */
+{
+ font-size: 11pt;
+ font-family: 'Calibri';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1
+{
+ font-size: 16pt;
+}
+span.rvts2
+{
+ font-size: 1pt;
+}
+span.rvts3
+{
+ font-size: 1pt;
+}
+span.rvts4
+{
+}
+a.rvts5, span.rvts5
+{
+ color: #0563c1;
+ text-decoration: underline;
+}
+a.rvts6, span.rvts6
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7, span.rvts7
+{
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ widows: 2;
+ orphans: 2;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 13px 0px;
+}
+.rvps1
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 0px;
+}
+.rvps2
+{
+ widows: 2;
+ orphans: 2;
+ border-color: #c6c6c6;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 3px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps3
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 8px 0px;
+}
+.rvps4
+{
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 0px;
+}
+.rvps5
+{
+ text-indent: -24px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 36px;
+}
+.rvps6
+{
+ text-indent: 12px;
+ widows: 2;
+ orphans: 2;
+ margin: 0px 0px 0px 36px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 12px; padding: 0; margin: 0 0 0 36px; list-style-position: outside; list-style-type: decimal;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 60px; list-style-position: outside; list-style-type: decimal;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;}
+--></style>
+</head>
+<body>
+<p class=rvps1><span class=rvts1>Using 3rd party DLP with Exchange Online</span></p>
+<p class=rvps2><span class=rvts2><br></span></p>
+<p class=rvps3><span class=rvts3><br></span></p>
+<p class=rvps4><span class=rvts4>Although Office 365 comes with a robust built-in DLP for Exchange online, SharePoint Online and OneDrive for Business but still there are customers who want to use 3rd party DLP solution with Exchange online. Reason for this varies from protecting existing investment on DLP to opting Office 365 SKU's which don</span>&#8217;<span class=rvts4>t have DLP bundled into them to specific requirements around integration with Network, Endpoint and Web DLP. Whatever might be the reason, if customer decides to use 3rd party DLP solution along with Exchange online, placement of DLP solution and email routing becomes overly critical. Typically, there are 3 possible deployment options/ topologies in which EXO and 3rd party DLP can be integrated.</span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<ol class=list0>
+<li value=1 style="margin-left: 0px" class=rvps6><span class=rvts4>Using existing on-premise DLP server.</span></li>
+<li value=2 style="margin-left: 0px" class=rvps6><span class=rvts4>Using SaaS based service from DLP providers.</span></li>
+<li value=3 style="margin-left: 0px" class=rvps6><span class=rvts4>Installing DLP server on IaaS model such as Azure. </span></li>
+</ol>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4>Option 1: Using existing on-premise DLP server. </span></p>
+<p class=rvps4><span class=rvts4>======================================= </span></p>
+<p class=rvps4><span class=rvts4>If customer decides to use their existing on-premise DLP solution, then their email routing will look something like depicted in </span><a class=rvts5 href="#Figure1">Figure1</a><span class=rvts4>. This is extremely easy to configure if they have Exchange Hybrid environment as all they need to configure is "</span><a class=rvts6 href="https://technet.microsoft.com/en-us/library/jj659055(v=exchg.150).aspx">Centralized Mail Transport</a><span class=rvts4>"&nbsp; but in case they have some other mailing solution even then it is simple as they just need to configure </span><a class=rvts6 href="https://technet.microsoft.com/en-us/library/dn751020(v=exchg.150).aspx">Own email server Connector</a><span class=rvts4> for email routing from Office 365 to on-premise servers.</span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4> </span><a name="Figure1"></a>
+<img width=410 height=547 alt="" style="padding : 1px;" src="n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online/img1.png"></p>
+<p class=rvps4><span class=rvts4> Figure1: Email routing between Exchange online and On-premise DLP.</span></p>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4>Option 2: Using SaaS based service from DLP providers.</span></p>
+<p class=rvps4><span class=rvts4>=============================================</span></p>
+<p class=rvps4><span class=rvts4>If customer decides to use SaaS based DLP solution, then their email routing will look something like depicted in </span><a class=rvts5 href="#Figure2">Figure2</a><span class=rvts4>. This is same as above as they just need to configure </span><a class=rvts6 href="https://technet.microsoft.com/en-us/library/dn751021(v=exchg.150).aspx">Partner organization Connector</a><span class=rvts4> for email routing from Office 365 to SaaS based DLP.</span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><a name="Figure2"></a>
+<img width=458 height=312 alt="" style="padding : 1px;" src="n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online/img2.png"></p>
+<p class=rvps4><span class=rvts4>Figure2: Email routing between Exchange online and Hosted DLP. </span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4>Option 3: Installing DLP server on IaaS model such as Azure. </span></p>
+<p class=rvps4><span class=rvts4>================================================</span></p>
+<p class=rvps4><span class=rvts4>If customer decides to install DLP solution on Azure, then their email routing will look something like depicted in </span><a class=rvts5 href="#Figure3">Figure3</a><span class=rvts4>. This is bit tricky as we know that </span><a class=rvts7 href="https://blogs.msdn.microsoft.com/mast/2017/11/15/enhanced-azure-security-for-sending-emails-november-2017-update/">sending outbound e-mail to external domains directly from an e-mail server hosted in Azure compute services is not supported.</a><span class=rvts4> Microsoft recommends that Azure customers employ authenticated SMTP relay services such as </span><a class=rvts6 href="https://products.office.com/en-us/exchange/exchange-email-security-spam-protection">Exchange Online Protection</a><span class=rvts4> to send e-mail from Azure VMs or from Azure App Services.</span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4>In case customer has emails hosted on Office 365 and Azure is being used to host the DLP VM's then we need to configure email routing in such manner that all "Outgoing" emails from Office 365 should be forwarded to DLP on Azure and post DLP has processed the messages, they should be routed back to Office 365. Now if not configured properly, this can cause:</span></p>
+<ol class=list0>
+<li value=1 style="margin-left: 0px" class=rvps6><span class=rvts4>Email Loop between Office 365 and DLP</span></li>
+<li value=2 style="margin-left: 0px" class=rvps6><span class=rvts4>Excess outgoing traffic from Azure DLP to Office 365 which may have </span><a class=rvts6 href="https://azure.microsoft.com/en-in/pricing/details/bandwidth/">cost implications</a><span class=rvts4>.</span></li>
+</ol>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p class=rvps4><span class=rvts4> </span><a name="Figure3"></a>
+<img width=534 height=360 alt="" style="padding : 1px;" src="n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online/img3.png"></p>
+<p class=rvps4><span class=rvts4>Figure3: Email routing between Exchange online and DLP hosted on Azure</span></p>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p class=rvps4><span class=rvts4>To avoid the 2 issues mentioned above, we need conditional email routing which means that we need to configure a </span><a class=rvts5 href="#Figure4">Connector</a><span class=rvts4> pointing to Public IP of VM running DLP solution and configure a </span><a class=rvts5 href="#Figure5">Transport Rule</a><span class=rvts4> invoking the connector and allows EOP to route emails outside if mails are coming from DLP server. </span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<div><table border=0 cellpadding=4 cellspacing=0 style="border-width: 0px; border-spacing: 0px;">
+<tr valign=top>
+<td width=437 valign=top style="padding: 0px 7px;"><p><a name="Figure4"></a>
+<img width=432 height=252 alt="" style="padding : 1px;" src="n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online/img4.png"></p>
+<p><span class=rvts4>Figure4: Connector configuration</span></p>
+</td>
+<td width=51 valign=top style="padding: 0px 7px;"><p><span class=rvts4><br></span></p>
+</td>
+<td width=467 valign=top style="padding: 0px 7px;"><p><img width=428 height=255 alt="" style="padding : 1px;" src="n9ij0qxiot6546u4nfimjuc3pygk7euc_arUsing+3rd+party+DLP+with+Exchange+Online/img5.png"></p>
+<p><span class=rvts4>Figure5: Transport Rule configuration</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p class=rvps4><span class=rvts4>With these configurations in place, only Outgoing emails will get routed to DLP and back to Office 365.</span></p>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p class=rvps4><span class=rvts4> </span></p>
+<p class=rvps4><span class=rvts4><br></span></p>
+<p><span class=rvts4><br></span></p>
+<p><span class=rvts4><br></span></p>
+<p><span class=rvts4><br></span></p>
+<p><span class=rvts4><br></span></p>
+</body></html>
